@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        Add Employee<br><br>
+        <form method="POST"enctype="multipart/form-data">
+            {%csrf_token %}
+            <label for="first_name">FIRST NAME:</label>
+            <input type="text"name="first_name"required><br><br>
+            <label for="last_name">LAST NAME</label>
+            <input type="text"name="last_name"required><br><br>
+            <label for="department">DEPARTMENT</label>
+            <input type="text"name="department"required><br><br>
+            <label for="designation">DESIGNATION</label>
+            <input type="text"name="designation"required><br><br>
+            <label for="date_of_join">JOIN DATE</label>
+            <input type="date" name="date_of_join"required><br><br>
+            <label for="salary">SALARY</label>
+            <input type="text" name="salary"required><br><br>
+            <label for="image">IMAGE</label>
+            <input type="file"NAME="image"><br><br>
+            <button type="submit">ADD</button>
+            
+        </form>
+    </div>
+</body>
+</html>

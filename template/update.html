@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <p>{{data.first_name}} {{data.last_name}}</p>
+            <label for="first_name">FIRST NAME</label>
+            <input type="text"name="first_name"><br><br>
+            <label for="last_name">LAST NAME</label>
+            <input type="text"name="last_name"><br><br>
+            <label for="department">DEPARTMENT</label>
+            <input type="text"name="department"><br><br>
+            <label for="designation">DESIGNATION</label>
+            <input type="text"name="designation"><br><br>
+            <label for="date_of_join">DATE_OF_JOIN</label>
+            <input type="date"name="date_of_join"><br><br>
+            <label for="salary">SALARY</label>
+            <input type="text"name="salary"><br><br>
+            <label for="image">IMAGE</label>
+            <input type="file"name="image"><br><br>
+            <button type="submit">UPDATE</button>
+
+        </div>
+    </form>
+</body>
+</html>
